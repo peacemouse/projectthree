@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/goods-detail.css" />	
+		<script src="js/jquery-1.12.3.js"></script>
+        <script src="js/goods-detail.js"></script>
+        <script src="chajian/jquery.cookie.js"></script>
+        <script src="js/public.js"></script>
+		<!--<script src="js/all.js"></script>-->
+		<title></title>
+	</head>
+	<body>
+		<div class="header">
+			<span class="header-welcome">
+				<span class="span-welcome">
+					欢迎光临莎莎网 ！
+				</span>
+				<a href="login.html" class="login">登录</a> 或
+				<a href="reg.html" class="reg">免费注册</a>
+			</span>
+			<div class="list1">
+			<ul class="list-sort">
+				<li><a href="#"><i style="background:url(image/mainimage/icon/icon1.png)"></i><a class="icon">我的账号</a>
+					<ul class="sort-count">
+						<li><a href="#" style="color:#888888">我的订单</a></li>
+						<li><a href="#" style="color:#888888">我的积分</a></li>
+						<li><a href="#" style="color:#888888">我的优惠券</a></li>
+						<li><a href="#" style="color:#888888">我的收藏</a></li>
+						<li><a href="#" style="color:#888888">我的评价</a></li>
+					</ul>
+				</li>
+				<li class="shopping"><a href="#"><i style="background:url(image/mainimage/icon/icon2.png)"></i><a class="icon">我的购物车</a>
+					<div class="shopping-div">
+						<p>购物车还没有商品,</p>
+						<p>快去挑选心爱的商品吧</p>
+					</div>
+				</li>
+				<li><a href="#"><i style="background:url(image/mainimage/icon/icon3.png)"></i><a class="icon">我的收藏</a></li>
+				<li><a>我的站内信</a></li>
+				<li><a>积分中心</a></li>
+				<li><a>Globalsite</a></li>
+				<li class="about-us"><a class="a-about">关于我们</a>
+					<a><i class="weibo-logo" style="background:url(image/mainimage/weibo.png)"></i>
+					      <div class="weibopicture">
+					      	 <img src="image/mainimage/icon/weibologo.jpg" />
+					      </div>
+					</a>
+					<a><i class="wechat-logo" style="background:url(image/mainimage/wecha.png)"></i>
+						 <div class="weixinpicture">
+					      	 <img src="image/mainimage/icon/weixinlogo.jpg" />
+					      </div>
+					</a>
+				</li>
+			</ul>
+			</div>
+		</div><!--头部div-->
+		
+		
+		<div class="header-main">
+			<div>
+			<a href="index.html" class="logo"><img src="image/mainimage/logo.png" title="欢迎光临莎莎网"/></a>
+			</div>
+			<div class="search-box">
+				<form>
+					<div class="search-input">
+						<input type="text" placeholder="雅诗兰黛" />
+					</div>
+					<button class="search-list">搜索</button>
+					
+				</form>   
+			</div>
+			<div class="key-words">
+					<a>精华</a>
+					<a>保湿</a>ccf 
+					<a>面霜</a>
+					<a>眼霜</a>
+					<a>资生堂</a>
+					<a>补水</a>
+					<a class="last-a">提拉紧致</a>
+			</div>
+		</div>
+		<!--搜索栏div结束-->
+		<div class="category-box">
+     		<div class="all-category"><i style="background:url(image/mainimage/icon/line.jpg)"></i>
+     			<span class="text-category">全部分类</span>
+     		</div>	
+     		<div class="second-category">  
+     			<ul>
+	     			<li class="first-list"><a>面部护肤</a><i>/</i></li>
+	     			<li><a>彩妆</a> <i>/</i></li>
+	     			<li class="time-sale"><a >限时特卖</a>
+	     				<i class="hot-logo" style="background:url(image/mainimage/icon/hot.jpg)"></i>
+	     			<i class="special-icon">/</i>
+	     			</li>
+	     			<li><a>贵宾专享</a><i>/</i></li>
+	     			<li><a>清仓特卖</a><i>/</i></li>
+	     			<li class="last-list"><a>所有品牌</a><i class="last-logo" style="background:url(image/mainimage/icon/sanjiaoxing.jpg)"></i>
+	     				<div class="brand">
+	     					<img src="image/mainimage/brand.jpg"/>
+	     				</div>
+	     			</li>
+     			</ul>
+     		</div>	
+		</div>
+		
+		<!--右边导航栏-->
+		
+			<div class="right-nav">
+			<div class="must-know"><a href="#">选购境外商品需知</a></div>
+			<div class="count-logo"><i style="background:url(image/mainimage/icon/family.png)"></i>
+				<div class="hide-div">我的账户</div>
+			</div>
+			<div class="shopping-list">
+				<div class="shopping-icon"><i style="background:url(image/mainimage/icon/shopping-car.png)"></i>
+					<div class="hide-div1">购物车</div>
+					<div class="num-container">0</div>
+				</div>
+			</div>
+			   
+			<!--<div class="my-shoucang"><a href="#"></a></div>-->
+			<div class="shoucang-logo"><i style=" width:16px;height:16px;display:block;background:url(image/mainimage/icon/count.png)";></i>
+				<div class="hide-div2">我的收藏</div>
+			</div>
+			
+			<div class="liulan-logo"><i style="width:16px;height:16px;display:block;background:url(image/mainimage/icon/clock.png)";></i>
+				<div class="hide-div3">浏览记录</div>
+			</div>
+			
+			<div class="xianshang-logo"><i style="width:16px;height:16px;display:block;margin-left:12px;margin-top:12px;background:url(image/mainimage/icon/erji.png)";></i>
+				<div class="hide-div4">线上客服</div>
+			</div>
+			
+			<div class="code-logo"><i style="width:16px;height:16px;display:block;margin-left:12px;margin-top:12px;background:url(image/mainimage/icon/code.png)";></i>
+				<div class="hide-div5"><img src="image/mainimage/icon/ii.jpg" style="width:100px;height:100px; margin-top:20px;"/>
+				  <p style="font-size: 14px;line-height: 20px;margin-top:-7px;">莎莎官方微信</p>
+				</div>
+			</div>
+			
+			<div class="scrolltop-logo"><i style="width:16px;height:16px;display:block;margin-left:12px;margin-top:0px;background:url(image/mainimage/icon/daosanjiao.png)";><p style="margin-top:20px; color:white;">TOP</p></p></i>
+			
+				
+			</div>
+			
+		</div>
+		
+		<div class="main-detail">
+			<div class="bread-jihe">
+				<p>首页/面部护肤/化妆水/精华水/护肤精华露(神仙水)</p>
+				
+			</div>
+			<div class="detail-nav">
+				<i style="background:url(image/shoppingimage/icon7.jpg)"></i>
+			    <span class="tie">特卖进行中，完结时间倒数</span> 
+			    <span class="time-dao" style="position: absolute;top:60px;left:800px;">1482019200000</span>
+			</div>
+			  
+			<div class="goods-image">
+				<div class="decount" style="background:url(image/shoppingimage/decount.jpg)"></div>
+				<div>
+					<img class="goods1" src="image/shoppingimage/goods-image1.jpg" />
+					<div id="smallArea" style="display:none; width: 75px; height: 75px; background: rgba(200, 250, 200, 0.4); position: absolute; left: 0px; top: 0px;"></div>
+				</div>
+				
+				
+			    <i class="fangdajing" style="background:url(image/shoppingimage/fangdajing.jpg)" ></i>
+			    <div class="pro-tips">
+			    	<i class="japen-logo"style="background:url(image/shoppingimage/japen.jpg)"></i>
+			    	<span class="japan-bread">日本品牌</span>
+			    	<i class="zan"style="background:url(image/shoppingimage/zan.jpg)"></i>
+			    	<span class="good-comt">好评</span>
+			    </div>
+			    <div class="pro-album">
+			    	<i class="prevent" style="background:url(image/shoppingimage/pre.jpg)"></i>
+			        <ul class="goods-album">
+			        	<li><img src="image/shoppingimage/goods-image1.jpg"/></li>
+			        	<li><img src="image/shoppingimage/goods-image2.jpg"/></li>
+			        	<li><img src="image/shoppingimage/goods-image3.jpg"/></li>
+			        	<li><img src="image/shoppingimage/goods-image4.jpg"/></li>
+			        </ul>
+			        <i class="next" style="background:url(image/shoppingimage/next.jpg)"></i>
+			    </div>
+			</div>  
+			<div class="goods-intro">
+				<div class="pro-title">
+					" 促进肌肤新陈代谢正常化，具有调整肌肤酸碱值平衡以及修护的效果，供给肌肤养分让肌肤充满弹性，兼具保养及抗细胞脂氧化作用"
+				</div>
+				<a class="pro-name">SK-II</a>
+				<p class="pro-title2">护肤精华露(神仙水)&nbsp;(330毫升)</p>
+				<div class="work">
+					<ul class="work-list">
+						<li><a href="#"/>保湿</a></li>
+						<li><a href="#"/>滋润</a></li>
+						<li><a href="#"/>提亮肤色</a></li>
+						<li><a href="#"/>修护</a></li>
+						<li><a href="#"/>抗氧化</a></li>
+						<li><a href="#"/>舒缓/抗敏感</a></li>
+						<li><a href="#"/>去红血丝</a></li>
+						<li><a href="#"/>提拉紧致</a></li>
+						<li><a href="#"/>抗皱/去皱</a></li>
+					</ul>
+				</div>
+				
+				<div class="product-buy-quantity">
+					<span class="count">数量</span>
+					<span class="jian">-</span>
+					<input class="number" type="text" value="1"/>
+					<span class="jia">+</span>
+				</div>
+				<div class="temai-price">
+					<span class="temai1">特卖价</span>
+					<spans style="color:#EC3E7D;font-size:35px;">￥<span class="pre-price">1050.0</span></span>
+					<span class="market-price">市场价￥1800.0</span>
+					
+				</div>
+				
+				<!--<div class="code"><img src="image/shoppingimage/code.jpg"></div>-->
+				<div class="pro-buy-action">
+					<button class="button1">立即抢购</button>
+					<div class="saosao"><img src="image/shoppingimage/saosao.jpg"/></div>
+				</div>
+				
+				<img  class="comt" src="image/shoppingimage/pingjia.jpg"/>
+			    <div class="pro-share">
+			    	<span class="collection"><i class="coll-icon" style="background:url(image/shoppingimage/ai.jpg)"></i><span class="text1">收藏</span></span>
+			        <span class="text2">分享到</span>
+			        <ul>
+			        	<li><a href="#"><img src="image/shoppingimage/icon1.jpg"></a></li>
+			        	<li><a href="#"><img src="image/shoppingimage/icon2.jpg"></a></li>
+			        	<li><a href="#"><img src="image/shoppingimage/icon3.jpg"></a></li>
+			        	<li><a href="#"><img src="image/shoppingimage/icon4.jpg"></a></li>
+			        	<li><a href="#"><img src="image/shoppingimage/iocn5.jpg"></a></li>
+			        	<li><a href="#"><img src="image/shoppingimage/icon6.jpg"></a></li>
+			        	
+			        </ul>
+			    </div>
+			    
+			   	<div id="bigArea" style="overflow: hidden; width: 300px; height: 300px; background: rgba(200, 200, 250, 0.5); position: absolute; left: 100px; top: 200px; background:pink;display: none;">
+					<img id="bigImg" src="image/shoppingimage/goods-image1.jpg"style="width:600px; height:600px; position: absolute; left: 0; top: 0;" />
+				</div>
+			    
+			</div>
+			
+		</div> 
+		
+    </div>		
+	
+    <div class="all-image">
+    	<img class="image1" src="image/shoppingimage/1.jpg" />
+        <img class="image2"src="image/shoppingimage/2.jpg"/>
+        <img class="image3" src="image/shoppingimage/3.jpg"/>
+        <img class="image4" src="image/shoppingimage/4.jpg"/> 
+        <img class="image5" src="image/shoppingimage/5.jpg"/>
+        <img class="image6" src="image/shoppingimage/6.jpg"/>
+         <img class="image7" src="image/shoppingimage/7.jpg"/>
+         <img class="image8" src="image/shoppingimage/8.jpg"/>
+         <img class="image9" src="image/shoppingimage/9.jpg"/>
+         <img class="image10" src="image/shoppingimage/10.jpg"/>g
+    </div>	
+		
+		
+	<!--第一个尾部-->
+		<div class="footer1">
+			<div class="sasa-promise">
+			<div class="sasa-promise1">
+				<div class="sasa-icon" style="background:url(image/mainimage/airplane.jpg)no-repeat"></div>
+				<div class="sasa-title1">满￥249包邮</div>
+				<div class="sasa-submit1">全球采购淘宝so easy</div>
+			</div>
+			<div class="sasa-promise2">
+				<div class="sasa-icon" style="background:url(image/mainimage/ZHENG.jpg)no-repeat"></div>
+				<div class="sasa-title1">正品保证</div>
+				<div class="sasa-submit1">专注美妆护肤38年</div>
+			</div>
+			<div class="sasa-promise3">
+				<div class="sasa-icon" style="background:url(image/mainimage/HK.jpg)no-repeat"></div>
+				<div class="sasa-title1">香港直邮</div>
+				<div class="sasa-submit1">香港直发  美丽到家</div>
+			</div>
+			<div class="sasa-promise4">
+				<div class="sasa-icon" style="background:url(image/mainimage/30day.jpg)no-repeat"></div>
+				<div class="sasa-title1">30天退货保证</div>
+				<div class="sasa-submit1">为您提供售后无忧保障</div>
+			</div>
+			<div class="sasa-promise5">
+				<div class="sasa-icon" style="background:url(image/mainimage/gupiao.jpg)no-repeat"></div>
+				<div class="sasa-title1">香港上市</div>
+				<div class="sasa-submit1">股票代码：HK00178</div>
+			</div>
+		</div>
+			
+		<div class="footer1-twodiv">
+			<div class="new-customer">
+				<dl>
+					<dt>新手上路</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">优惠券说明</a></dd>
+					<dd><a href="#">常见问题</a></dd>
+					<dd><a href="#">联系我们</a></dd>
+				</dl>
+			</div>
+			
+			<div class="pay-sort">
+				<dl>
+					<dt>付款方式</dt>
+					<dd><a href="#">在线支付</a></dd>
+					<dd><a href="#">积分支付</a></dd>
+				</dl>
+			</div>
+			
+			<div class="peisong-sort">
+				<dl>
+					<dt>配送方式</dt>
+					<dd><a href="#">配送说明</a></dd>
+					<dd><a href="#">追踪订单</a></dd>
+				</dl>
+			</div>
+			
+			
+			<div class="shouhou-sort">
+				<dl>
+					<dt>售后服务</dt>
+					<dd><a href="#">正品保证</a></dd>
+					<dd><a href="#">价格承诺</a></dd>
+					<dd><a href="#">30日退货保证</a></dd>
+					<dd><a href="#">退款程序</a></dd>
+					<dd><a href="#">更改订单</a></dd>
+				</dl>
+			</div>
+			
+			
+			<div class="member-sort">
+				<dl>
+					<dt>售后服务</dt>
+					<dd><a href="#">积分奖赏</a></dd>
+					<dd><a href="#">会员计划</a></dd>
+					
+				</dl>
+			</div>
+			
+			
+			<div class="load1"><img src="image/mainimage/icon/div1.jpg"/></div>
+			<div class="load2"><img src="image/mainimage/icon/div2.jpg"/></div>
+			
+			
+			<div class="pinpai">
+				<ul>
+					<li><a href="#"><img src="image/mainimage/icon/logo1.jpg"/></a></li>
+					<li><a href="#"><img src="image/mainimage/icon/logo2.jpg"/></a></li>
+					<li><a href="#"><img src="image/mainimage/icon/logo3.jpg"/></a></li>
+					<li><a href="#"><img src="image/mainimage/icon/logo4.jpg"/></a></li>
+					<li><a href="#"><img src="image/mainimage/icon/logo5.jpg"/></a></li>
+					<li><a href="#"><img src="image/mainimage/icon/logo6.jpg"/></a></li>
+					<li><a href="#"><img src="image/mainimage/icon/logo7.jpg"/></a></li>
+					<li><a href="#"><img src="image/mainimage/icon/logo8.jpg"/></a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="footer-last">
+			<div class="about-sasa1">
+				<ul>
+					<li>关于莎莎</li>
+					<li>使用条款</li>
+					<li>隐私策略</li>
+					<li>批发服务</li>
+					<li>招商合作</li>
+					<li>帮助中心</li>
+					<li>港澳店铺推广</li>
+					<li>人才招聘</li>
+					<li>联络我们</li>
+					<li>其它送货地区</li>
+				</ul>
+			</div>
+			<p class="copyright">Copyright 2000-2016 Sa Sa dot Com Limited 版权所有莎莎国际控股有限公司成员</p>
+		</div>	
+		
+	</body>
+</html>
